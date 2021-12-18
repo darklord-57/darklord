@@ -1,7 +1,9 @@
 - 👋 Hi, I’m @alenj57
 - 👀 I’m interested in Data Analytics
-- 🌱 I’m currently learning Data Science And Analytics
-- 📫 alenjose59@gmail.com   07763508021
+- 🌱 I’m currently doing my masters in Data Science And Analytics
+- University of Hertfordshire
+- Mobile : 07763508021
+- 📫 alenjose59@gmail.com   
 
 
 <!---
