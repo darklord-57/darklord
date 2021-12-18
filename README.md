@@ -1,9 +1,9 @@
 - 👋 Hi, I’m @alen jose
 - 👀 I’m interested in Data Analytics
 - 🌱 I’m currently doing my masters in Data Science And Analytics
-- University of Hertfordshire
-- Mobile : 07763508021
-- 📫 alenjose59@gmail.com   
+- 📚 University of Hertfordshire
+- 📞 Mobile : 07763508021
+- 📫 Mail : alenjose59@gmail.com   
 
 
 <!---
