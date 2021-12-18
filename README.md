@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @alenj57
+- 👋 Hi, I’m @alen jose
 - 👀 I’m interested in Data Analytics
 - 🌱 I’m currently doing my masters in Data Science And Analytics
 - University of Hertfordshire
