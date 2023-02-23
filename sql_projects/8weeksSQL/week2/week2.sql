@@ -259,3 +259,5 @@ order by hour_ordered;
 select dayname(order_time) as dayOfWeek, count(*)
 from customer_orders_c
 group by dayOfWeek;
+
+
