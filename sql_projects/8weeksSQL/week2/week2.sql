@@ -261,3 +261,17 @@ from customer_orders_c
 group by dayOfWeek;
 
 
+# How many runners signed up for each 1 week period?
+# (i.e. week starts 2021-01-01)
+
+select *
+from runners;
+
+SELECT
+  CONCAT(DATE_FORMAT(registration_date, '%b'), '-', FLOOR((WEEK(registration_date, 1) - WEEK(DATE_FORMAT(registration_date, '%Y-%m-01'), 1))/4) + 1) AS period
+FROM runners;
+
+
+select *
+from runner_orders;
+
