@@ -213,7 +213,7 @@ from customer_orders_c
 join runner_orders_c roc on customer_orders_c.order_id = roc.order_id
 join pizza_names pn on customer_orders_c.pizza_id = pn.pizza_id
 where cancellation is null
-group by pizza_id;
+group by pn.pizza_id,pizza_name;
 
 
 #   How many Vegetarian and Meatlovers were ordered by each customer?
@@ -263,15 +263,130 @@ group by dayOfWeek;
 
 # How many runners signed up for each 1 week period?
 # (i.e. week starts 2021-01-01)
+select concat(year(registration_date),'-',
+              month(registration_date),'-',
+              week(registration_date, 1) + 1) as date_, count(*)
+from runners
+group by date_;
+
+# What was the average time in minutes it took for each runner to
+# arrive at the Pizza Runner HQ to pickup the order?
+with cte as
+    (select distinct r.order_id,
+                     runner_id,
+                     TIMESTAMPDIFF(MINUTE, order_time, pickup_time) pick_duration
+     from runner_orders_c r
+     join customer_orders_c coc
+         on r.order_id = coc.order_id
+     where cancellation is null )
+
+select runner_id, avg(pick_duration)
+from cte
+group by runner_id;
+
+# Is there any relationship between the number of pizzas and how long
+# the order takes to prepare?
+with pizzas_per_order as
+    (select order_id, order_time, count(*) as total_pizzas
+     from customer_orders_c
+     group by order_id,order_time),
+
+cte as
+    (select r.order_id,
+            total_pizzas,
+            timestampdiff(MINUTE, p.order_time, r.pickup_time)
+                                                    as prep_time
+from runner_orders_c r
+join pizzas_per_order p
+    on r.order_id = p.order_id
+where cancellation is null )
+
+select total_pizzas, avg(prep_time) as avg_prep_time
+from cte
+group by total_pizzas;
+
+# this clearly means there is a correlation between the number of pizzas ordered and the time taken to prepare it.
+
+# What was the average distance travelled for each customer?
+with cte as
+    (select distinct customer_id, coc.order_id, distance
+     from runner_orders_c
+     join customer_orders_c coc
+        on runner_orders_c.order_id = coc.order_id
+     )
+
+select customer_id,
+       count(*) as '# of orders' ,
+       avg(distance)
+from cte
+where distance is not null
+group by customer_id;
+
+# What was the difference between the longest and shortest
+# delivery times for all orders?
+
+select max(duration) - min(duration) as diff
+from runner_orders_c;
+
+# What was the average speed for each runner for each delivery
+# and do you notice any trend for these values?
+with cte as
+    (select runner_id, (distance / (duration/60)) as speed
+     from runner_orders_c)
+
+select runner_id, avg(speed) as avg_speed
+from cte
+group by runner_id;
+
+# What is the successful delivery percentage for each runner?
+
+# long method :
+with cte as
+    (select runner_id,
+       (if(cancellation is null,1,0)) as successful ,
+       if(cancellation is not null,1,0) as 'un-successful'
+     from runner_orders_c),
+
+cte1 as (select runner_id,
+       sum(successful) as total_suc,
+       sum(`un-successful`) as total_un_suc
+from cte
+group by runner_id)
+
+select runner_id, (total_suc / (total_suc + total_un_suc))*100 as order_success_percent
+from cte1;
+
+
+# short method :
+with cte as
+    (select runner_id,
+      round( (sum(if(cancellation is null,1,0)) / count(*))*100, 0)
+     from runner_orders_c
+     group by runner_id)
+select *
+from cte;
+
+# C. Ingredient Optimisation
+
+# What are the standard ingredients for each pizza?
+select *
+from pizza_recipes;
 
 select *
-from runners;
+from pizza_toppings;
 
 SELECT
-  CONCAT(DATE_FORMAT(registration_date, '%b'), '-', FLOOR((WEEK(registration_date, 1) - WEEK(DATE_FORMAT(registration_date, '%Y-%m-01'), 1))/4) + 1) AS period
-FROM runners;
+  n.pizza_name,
+  GROUP_CONCAT(t.topping_name ORDER BY t.topping_id SEPARATOR ' ,') AS toppings
+FROM
+  pizza_runner.pizza_recipes AS r
+  JOIN pizza_runner.pizza_names AS n ON r.pizza_id = n.pizza_id
+  JOIN pizza_runner.pizza_toppings AS t ON FIND_IN_SET(t.topping_id, r.toppings)
+GROUP BY
+  n.pizza_name
+ORDER BY
+  n.pizza_name;
 
 
-select *
-from runner_orders;
+
 
