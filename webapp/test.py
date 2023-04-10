@@ -1,17 +1,32 @@
 # Import libraries
 import streamlit as st
-import base64
 
 # Custom CSS styling
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+def local_css(css_str):
+    st.markdown(f'<style>{css_str}</style>', unsafe_allow_html=True)
 
 def remote_css(url):
     st.markdown(f'<link href="{url}" rel="stylesheet">', unsafe_allow_html=True)
 
 # Adding custom CSS
-local_css("style.css")
+css_styles = """
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+"""
+
+local_css(css_styles)
 remote_css("https://fonts.googleapis.com/css?family=Roboto")
 
 # Add a title to the app
