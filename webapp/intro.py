@@ -1,10 +1,12 @@
 import streamlit as st
-import base64
+import os
+
 
 def introduction_page():
-    # Custom CSS :
+    # local css
     def local_css(file_name):
-        with open(file_name) as f:
+        file_path = os.path.join(os.path.dirname(__file__), file_name)
+        with open(file_path) as f:
             st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
     # Remote pre-defined CSS : 
