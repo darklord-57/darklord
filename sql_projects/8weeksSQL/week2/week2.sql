@@ -387,6 +387,24 @@ GROUP BY
 ORDER BY
   n.pizza_name;
 
+# What was the most commonly added extra?
+select *
+from pizza_toppings;
+
+select extras
+from customer_orders;
+
+SELECT SUBSTRING_INDEX(SUBSTRING_INDEX(extras, ',', n.digit+1), ',', -1) AS value, COUNT(*) AS count_value
+FROM customer_orders
+JOIN (SELECT 0 AS digit UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4 UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7 UNION ALL SELECT 8 UNION ALL SELECT 9) n
+WHERE n.digit < LENGTH(extras) - LENGTH(REPLACE(extras, ',', '')) + 1
+GROUP BY value
+having value not like 'null' and value not like '';
+
+
+
+
+
 
 
 

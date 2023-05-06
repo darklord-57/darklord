@@ -1,6 +1,6 @@
 import streamlit as st
 from intro import introduction_page
-from input import input_page
+from user_input import input_page
 from plots import plots_page
 from conclusion import conclusion_page
 
