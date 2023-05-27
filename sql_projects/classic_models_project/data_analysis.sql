@@ -119,7 +119,7 @@ group by employeeNumber, c.customerNumber)
 
 select *
 from cte
-where rank_ in (1,2,3,4,5);
+where rank_ <= 5;
 
 # Find out the most popular product (highest number of orders) for each employee.
 # Determine the correlation between the number of orders an employee manages and their office's location (country).
