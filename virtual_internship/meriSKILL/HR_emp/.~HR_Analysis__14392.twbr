@@ -1,0 +1,2907 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0909.1159                               -->
+<workbook original-version='18.1' source-build='2023.2.2 (20232.23.0909.1159)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='HR_Analysis_16980950999380' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='HR-Employee-Attrition' inline='true' name='federated.1ewflcu1fp6w321av0wv61ulal3w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='HR-Employee-Attrition' name='textscan.06o0hna156ecso1gg4z2h0dlnjd5'>
+            <connection class='textscan' directory='/Users/alenjose/Desktop/data/meriSKILL_internship' filename='HR-Employee-Attrition.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.06o0hna156ecso1gg4z2h0dlnjd5' name='HR-Employee-Attrition.csv' table='[HR-Employee-Attrition#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='Age' ordinal='0' />
+            <column datatype='string' name='Attrition' ordinal='1' />
+            <column datatype='string' name='BusinessTravel' ordinal='2' />
+            <column datatype='integer' name='DailyRate' ordinal='3' />
+            <column datatype='string' name='Department' ordinal='4' />
+            <column datatype='integer' name='DistanceFromHome' ordinal='5' />
+            <column datatype='integer' name='Education' ordinal='6' />
+            <column datatype='string' name='EducationField' ordinal='7' />
+            <column datatype='integer' name='EmployeeCount' ordinal='8' />
+            <column datatype='integer' name='EmployeeNumber' ordinal='9' />
+            <column datatype='integer' name='EnvironmentSatisfaction' ordinal='10' />
+            <column datatype='string' name='Gender' ordinal='11' />
+            <column datatype='integer' name='HourlyRate' ordinal='12' />
+            <column datatype='integer' name='JobInvolvement' ordinal='13' />
+            <column datatype='integer' name='JobLevel' ordinal='14' />
+            <column datatype='string' name='JobRole' ordinal='15' />
+            <column datatype='integer' name='JobSatisfaction' ordinal='16' />
+            <column datatype='string' name='MaritalStatus' ordinal='17' />
+            <column datatype='integer' name='MonthlyIncome' ordinal='18' />
+            <column datatype='integer' name='MonthlyRate' ordinal='19' />
+            <column datatype='integer' name='NumCompaniesWorked' ordinal='20' />
+            <column datatype='string' name='Over18' ordinal='21' />
+            <column datatype='string' name='OverTime' ordinal='22' />
+            <column datatype='integer' name='PercentSalaryHike' ordinal='23' />
+            <column datatype='integer' name='PerformanceRating' ordinal='24' />
+            <column datatype='integer' name='RelationshipSatisfaction' ordinal='25' />
+            <column datatype='integer' name='StandardHours' ordinal='26' />
+            <column datatype='integer' name='StockOptionLevel' ordinal='27' />
+            <column datatype='integer' name='TotalWorkingYears' ordinal='28' />
+            <column datatype='integer' name='TrainingTimesLastYear' ordinal='29' />
+            <column datatype='integer' name='WorkLifeBalance' ordinal='30' />
+            <column datatype='integer' name='YearsAtCompany' ordinal='31' />
+            <column datatype='integer' name='YearsInCurrentRole' ordinal='32' />
+            <column datatype='integer' name='YearsSinceLastPromotion' ordinal='33' />
+            <column datatype='integer' name='YearsWithCurrManager' ordinal='34' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.06o0hna156ecso1gg4z2h0dlnjd5' name='HR-Employee-Attrition.csv' table='[HR-Employee-Attrition#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='Age' ordinal='0' />
+            <column datatype='string' name='Attrition' ordinal='1' />
+            <column datatype='string' name='BusinessTravel' ordinal='2' />
+            <column datatype='integer' name='DailyRate' ordinal='3' />
+            <column datatype='string' name='Department' ordinal='4' />
+            <column datatype='integer' name='DistanceFromHome' ordinal='5' />
+            <column datatype='integer' name='Education' ordinal='6' />
+            <column datatype='string' name='EducationField' ordinal='7' />
+            <column datatype='integer' name='EmployeeCount' ordinal='8' />
+            <column datatype='integer' name='EmployeeNumber' ordinal='9' />
+            <column datatype='integer' name='EnvironmentSatisfaction' ordinal='10' />
+            <column datatype='string' name='Gender' ordinal='11' />
+            <column datatype='integer' name='HourlyRate' ordinal='12' />
+            <column datatype='integer' name='JobInvolvement' ordinal='13' />
+            <column datatype='integer' name='JobLevel' ordinal='14' />
+            <column datatype='string' name='JobRole' ordinal='15' />
+            <column datatype='integer' name='JobSatisfaction' ordinal='16' />
+            <column datatype='string' name='MaritalStatus' ordinal='17' />
+            <column datatype='integer' name='MonthlyIncome' ordinal='18' />
+            <column datatype='integer' name='MonthlyRate' ordinal='19' />
+            <column datatype='integer' name='NumCompaniesWorked' ordinal='20' />
+            <column datatype='string' name='Over18' ordinal='21' />
+            <column datatype='string' name='OverTime' ordinal='22' />
+            <column datatype='integer' name='PercentSalaryHike' ordinal='23' />
+            <column datatype='integer' name='PerformanceRating' ordinal='24' />
+            <column datatype='integer' name='RelationshipSatisfaction' ordinal='25' />
+            <column datatype='integer' name='StandardHours' ordinal='26' />
+            <column datatype='integer' name='StockOptionLevel' ordinal='27' />
+            <column datatype='integer' name='TotalWorkingYears' ordinal='28' />
+            <column datatype='integer' name='TrainingTimesLastYear' ordinal='29' />
+            <column datatype='integer' name='WorkLifeBalance' ordinal='30' />
+            <column datatype='integer' name='YearsAtCompany' ordinal='31' />
+            <column datatype='integer' name='YearsInCurrentRole' ordinal='32' />
+            <column datatype='integer' name='YearsSinceLastPromotion' ordinal='33' />
+            <column datatype='integer' name='YearsWithCurrManager' ordinal='34' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attrition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Attrition]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>Attrition</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BusinessTravel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BusinessTravel]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>BusinessTravel</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DailyRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DailyRate]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>DailyRate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DistanceFromHome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DistanceFromHome]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>DistanceFromHome</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EducationField</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EducationField]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>EducationField</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmployeeCount]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>EmployeeCount</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmployeeNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmployeeNumber]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>EmployeeNumber</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnvironmentSatisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EnvironmentSatisfaction]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>EnvironmentSatisfaction</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HourlyRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HourlyRate]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>HourlyRate</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobInvolvement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JobInvolvement]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>JobInvolvement</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobLevel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JobLevel]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>JobLevel</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobRole</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[JobRole]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>JobRole</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JobSatisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JobSatisfaction]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>JobSatisfaction</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaritalStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MaritalStatus]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>MaritalStatus</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyIncome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MonthlyIncome]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>MonthlyIncome</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyRate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MonthlyRate]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>MonthlyRate</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumCompaniesWorked</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NumCompaniesWorked]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>NumCompaniesWorked</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over18</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Over18]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>Over18</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OverTime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OverTime]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>OverTime</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PercentSalaryHike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PercentSalaryHike]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>PercentSalaryHike</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PerformanceRating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PerformanceRating]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>PerformanceRating</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RelationshipSatisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RelationshipSatisfaction]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>RelationshipSatisfaction</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StandardHours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[StandardHours]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>StandardHours</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StockOptionLevel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[StockOptionLevel]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>StockOptionLevel</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalWorkingYears</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalWorkingYears]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>TotalWorkingYears</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TrainingTimesLastYear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TrainingTimesLastYear]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>TrainingTimesLastYear</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WorkLifeBalance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WorkLifeBalance]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>WorkLifeBalance</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsAtCompany</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsAtCompany]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>YearsAtCompany</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsInCurrentRole</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsInCurrentRole]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>YearsInCurrentRole</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsSinceLastPromotion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsSinceLastPromotion]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>YearsSinceLastPromotion</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearsWithCurrManager</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearsWithCurrManager]</local-name>
+            <parent-name>[HR-Employee-Attrition.csv]</parent-name>
+            <remote-alias>YearsWithCurrManager</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Age]' peg='0' size='5' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Age]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
+      <column caption='Business Travel' datatype='string' name='[BusinessTravel]' role='dimension' type='nominal' />
+      <column caption='Daily Rate' datatype='integer' name='[DailyRate]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+      <column caption='Distance From Home' datatype='integer' name='[DistanceFromHome]' role='measure' type='quantitative' />
+      <column caption='Education Field' datatype='string' name='[EducationField]' role='dimension' type='nominal' />
+      <column caption='Employee Count' datatype='integer' name='[EmployeeCount]' role='measure' type='quantitative' />
+      <column caption='Employee Number' datatype='integer' name='[EmployeeNumber]' role='dimension' type='ordinal' />
+      <column caption='Environment Satisfaction' datatype='integer' name='[EnvironmentSatisfaction]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column caption='Hourly Rate' datatype='integer' name='[HourlyRate]' role='measure' type='quantitative' />
+      <column caption='Job Involvement' datatype='integer' name='[JobInvolvement]' role='measure' type='quantitative' />
+      <column caption='Job Level' datatype='integer' name='[JobLevel]' role='measure' type='quantitative' />
+      <column caption='Job Role' datatype='string' name='[JobRole]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Healthcare Representative&quot;' value='Healthcare Rep' />
+          <alias key='&quot;Human Resources&quot;' value='HR' />
+          <alias key='&quot;Manager&quot;' value='Mngr' />
+          <alias key='&quot;Sales Representative&quot;' value='Sales Rep' />
+        </aliases>
+      </column>
+      <column caption='Job Satisfaction' datatype='integer' name='[JobSatisfaction]' role='measure' type='quantitative' />
+      <column caption='Marital Status' datatype='string' name='[MaritalStatus]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Monthly Income (bin)' datatype='integer' name='[Monthly Income (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='3' formula='[MonthlyIncome]' peg='0' size='1000' />
+      </column>
+      <column caption='Monthly Income' datatype='integer' name='[MonthlyIncome]' role='measure' type='quantitative' />
+      <column caption='Monthly Rate' datatype='integer' name='[MonthlyRate]' role='measure' type='quantitative' />
+      <column caption='Num Companies Worked' datatype='integer' name='[NumCompaniesWorked]' role='measure' type='quantitative' />
+      <column caption='Over Time' datatype='string' name='[OverTime]' role='dimension' type='nominal' />
+      <column caption='Percent Salary Hike' datatype='integer' name='[PercentSalaryHike]' role='measure' type='quantitative' />
+      <column caption='Performance Rating' datatype='integer' name='[PerformanceRating]' role='measure' type='quantitative' />
+      <column caption='Relationship Satisfaction' datatype='integer' name='[RelationshipSatisfaction]' role='measure' type='quantitative' />
+      <column caption='Standard Hours' datatype='integer' name='[StandardHours]' role='measure' type='quantitative' />
+      <column caption='Stock Option Level' datatype='integer' name='[StockOptionLevel]' role='measure' type='quantitative' />
+      <column caption='Total Working Years' datatype='integer' name='[TotalWorkingYears]' role='measure' type='quantitative' />
+      <column caption='Training Times Last Year' datatype='integer' name='[TrainingTimesLastYear]' role='dimension' type='quantitative' />
+      <column caption='Work Life Balance' datatype='integer' name='[WorkLifeBalance]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Years At Company (bin)' datatype='integer' name='[Years At Company (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[YearsAtCompany]' peg='0' size='4' />
+      </column>
+      <column caption='Years At Company' datatype='integer' name='[YearsAtCompany]' role='measure' type='quantitative' />
+      <column caption='Years In Current Role' datatype='integer' name='[YearsInCurrentRole]' role='measure' type='quantitative' />
+      <column caption='Years Since Last Promotion' datatype='integer' name='[YearsSinceLastPromotion]' role='measure' type='quantitative' />
+      <column caption='Years With Curr Manager' datatype='integer' name='[YearsWithCurrManager]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='HR-Employee-Attrition.csv' datatype='table' name='[__tableau_internal_object_id__].[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]' role='measure' type='quantitative' />
+      <column-instance column='[EmployeeNumber]' derivation='Count' name='[cnt:EmployeeNumber:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[EmployeeNumber]' derivation='CountD' name='[ctd:EmployeeNumber:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Attrition]' derivation='None' name='[none:Attrition:nk]' pivot='key' type='nominal' />
+      <column-instance column='[BusinessTravel]' derivation='None' name='[none:BusinessTravel:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[JobSatisfaction]' derivation='Sum' name='[sum:JobSatisfaction:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Business Travel,Department)' hidden='true' name='[Action (Business Travel,Department)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[BusinessTravel]' />
+          <groupfilter function='level-members' level='[Department]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Department,Gender,Job Role)' hidden='true' name='[Action (Department,Gender,Job Role)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Department]' />
+          <groupfilter function='level-members' level='[Gender]' />
+          <groupfilter function='level-members' level='[JobRole]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='/Users/alenjose/Documents/My Tableau Repository/Data sources/HR-Employee-Attrition.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/23/2023 09:04:29 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='HR-Employee-Attrition' increment-value='%null%' refresh-type='create' rows-inserted='1470' timestamp-start='2023-10-23 21:04:28.768' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attrition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Attrition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attrition</remote-alias>
+              <ordinal>1</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BusinessTravel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BusinessTravel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BusinessTravel</remote-alias>
+              <ordinal>2</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DailyRate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DailyRate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DailyRate</remote-alias>
+              <ordinal>3</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>782</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Department</remote-alias>
+              <ordinal>4</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DistanceFromHome</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DistanceFromHome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DistanceFromHome</remote-alias>
+              <ordinal>5</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education</remote-alias>
+              <ordinal>6</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EducationField</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EducationField]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EducationField</remote-alias>
+              <ordinal>7</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmployeeCount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EmployeeCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmployeeCount</remote-alias>
+              <ordinal>8</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmployeeNumber</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EmployeeNumber]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmployeeNumber</remote-alias>
+              <ordinal>9</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1470</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EnvironmentSatisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[EnvironmentSatisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EnvironmentSatisfaction</remote-alias>
+              <ordinal>10</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>11</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HourlyRate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HourlyRate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HourlyRate</remote-alias>
+              <ordinal>12</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JobInvolvement</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[JobInvolvement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JobInvolvement</remote-alias>
+              <ordinal>13</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JobLevel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[JobLevel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JobLevel</remote-alias>
+              <ordinal>14</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JobRole</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[JobRole]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JobRole</remote-alias>
+              <ordinal>15</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JobSatisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[JobSatisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JobSatisfaction</remote-alias>
+              <ordinal>16</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MaritalStatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MaritalStatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MaritalStatus</remote-alias>
+              <ordinal>17</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthlyIncome</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MonthlyIncome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthlyIncome</remote-alias>
+              <ordinal>18</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1186</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthlyRate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MonthlyRate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthlyRate</remote-alias>
+              <ordinal>19</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1272</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NumCompaniesWorked</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NumCompaniesWorked]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NumCompaniesWorked</remote-alias>
+              <ordinal>20</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Over18</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Over18]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Over18</remote-alias>
+              <ordinal>21</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OverTime</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OverTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OverTime</remote-alias>
+              <ordinal>22</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PercentSalaryHike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PercentSalaryHike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PercentSalaryHike</remote-alias>
+              <ordinal>23</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PerformanceRating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PerformanceRating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PerformanceRating</remote-alias>
+              <ordinal>24</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RelationshipSatisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[RelationshipSatisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RelationshipSatisfaction</remote-alias>
+              <ordinal>25</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StandardHours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[StandardHours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StandardHours</remote-alias>
+              <ordinal>26</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StockOptionLevel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[StockOptionLevel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StockOptionLevel</remote-alias>
+              <ordinal>27</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalWorkingYears</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalWorkingYears]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalWorkingYears</remote-alias>
+              <ordinal>28</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TrainingTimesLastYear</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TrainingTimesLastYear]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TrainingTimesLastYear</remote-alias>
+              <ordinal>29</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WorkLifeBalance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WorkLifeBalance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WorkLifeBalance</remote-alias>
+              <ordinal>30</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearsAtCompany</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearsAtCompany]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearsAtCompany</remote-alias>
+              <ordinal>31</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearsInCurrentRole</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearsInCurrentRole]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearsInCurrentRole</remote-alias>
+              <ordinal>32</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearsSinceLastPromotion</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearsSinceLastPromotion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearsSinceLastPromotion</remote-alias>
+              <ordinal>33</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearsWithCurrManager</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearsWithCurrManager]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearsWithCurrManager</remote-alias>
+              <ordinal>34</ordinal>
+              <family>HR-Employee-Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1ewflcu1fp6w321av0wv61ulal3w].[cnt:EmployeeNumber:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:JobSatisfaction:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>66</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>223</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>219</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>585</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>1107</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>3426</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>208</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>468</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>92</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>1628</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Department:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Human Resources&quot;</bucket>
+            </map>
+            <map to='#a26dc2'>
+              <bucket>&quot;Research &amp; Development&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sales&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Attrition:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:BusinessTravel:nk]' type='palette'>
+            <map to='#9e3a26'>
+              <bucket>&quot;Travel_Frequently&quot;</bucket>
+            </map>
+            <map to='#eb6c1c'>
+              <bucket>&quot;Travel_Rarely&quot;</bucket>
+            </map>
+            <map to='#f8b252'>
+              <bucket>&quot;Non-Travel&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='HR-Employee-Attrition.csv' id='HR-Employee-Attrition.csv_0F76A99D6D8C437999E18FC74533CF7B'>
+            <properties context=''>
+              <relation connection='textscan.06o0hna156ecso1gg4z2h0dlnjd5' name='HR-Employee-Attrition.csv' table='[HR-Employee-Attrition#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='Age' ordinal='0' />
+                  <column datatype='string' name='Attrition' ordinal='1' />
+                  <column datatype='string' name='BusinessTravel' ordinal='2' />
+                  <column datatype='integer' name='DailyRate' ordinal='3' />
+                  <column datatype='string' name='Department' ordinal='4' />
+                  <column datatype='integer' name='DistanceFromHome' ordinal='5' />
+                  <column datatype='integer' name='Education' ordinal='6' />
+                  <column datatype='string' name='EducationField' ordinal='7' />
+                  <column datatype='integer' name='EmployeeCount' ordinal='8' />
+                  <column datatype='integer' name='EmployeeNumber' ordinal='9' />
+                  <column datatype='integer' name='EnvironmentSatisfaction' ordinal='10' />
+                  <column datatype='string' name='Gender' ordinal='11' />
+                  <column datatype='integer' name='HourlyRate' ordinal='12' />
+                  <column datatype='integer' name='JobInvolvement' ordinal='13' />
+                  <column datatype='integer' name='JobLevel' ordinal='14' />
+                  <column datatype='string' name='JobRole' ordinal='15' />
+                  <column datatype='integer' name='JobSatisfaction' ordinal='16' />
+                  <column datatype='string' name='MaritalStatus' ordinal='17' />
+                  <column datatype='integer' name='MonthlyIncome' ordinal='18' />
+                  <column datatype='integer' name='MonthlyRate' ordinal='19' />
+                  <column datatype='integer' name='NumCompaniesWorked' ordinal='20' />
+                  <column datatype='string' name='Over18' ordinal='21' />
+                  <column datatype='string' name='OverTime' ordinal='22' />
+                  <column datatype='integer' name='PercentSalaryHike' ordinal='23' />
+                  <column datatype='integer' name='PerformanceRating' ordinal='24' />
+                  <column datatype='integer' name='RelationshipSatisfaction' ordinal='25' />
+                  <column datatype='integer' name='StandardHours' ordinal='26' />
+                  <column datatype='integer' name='StockOptionLevel' ordinal='27' />
+                  <column datatype='integer' name='TotalWorkingYears' ordinal='28' />
+                  <column datatype='integer' name='TrainingTimesLastYear' ordinal='29' />
+                  <column datatype='integer' name='WorkLifeBalance' ordinal='30' />
+                  <column datatype='integer' name='YearsAtCompany' ordinal='31' />
+                  <column datatype='integer' name='YearsInCurrentRole' ordinal='32' />
+                  <column datatype='integer' name='YearsSinceLastPromotion' ordinal='33' />
+                  <column datatype='integer' name='YearsWithCurrManager' ordinal='34' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_C6EBB6777F6C4551A548070D086C5311]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Department Analysis' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_4512F43F888B4D0586F7DE35CBDB713C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Attrition Analysis' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_91FF1C14521C453D9F5505463C763A01]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Travel Analysis' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Age Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='18'>Age Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR-Employee-Attrition' name='federated.1ewflcu1fp6w321av0wv61ulal3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ewflcu1fp6w321av0wv61ulal3w'>
+            <column aggregation='Sum' datatype='integer' name='[Age]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column caption='Employee Number' datatype='integer' name='[EmployeeNumber]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Job Role' datatype='string' name='[JobRole]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Healthcare Representative&quot;' value='Healthcare Rep' />
+                <alias key='&quot;Human Resources&quot;' value='HR' />
+                <alias key='&quot;Manager&quot;' value='Mngr' />
+                <alias key='&quot;Sales Representative&quot;' value='Sales Rep' />
+              </aliases>
+            </column>
+            <column-instance column='[EmployeeNumber]' derivation='CountD' name='[ctd:EmployeeNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[Action (Department,Gender,Job Role)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_C6EBB6777F6C4551A548070D086C5311]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Department]' />
+              <groupfilter function='level-members' level='[Gender]' />
+              <groupfilter function='level-members' level='[JobRole]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[Action (Department,Gender,Job Role)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' scope='rows' value='Number of Employees' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' num-steps='5' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' value='Number of Employees' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-color' value='#e15759' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e15759' />
+                <format attr='mark-transparency' value='134' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]</rows>
+        <cols>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Age:ok]</cols>
+        <show-full-range>
+          <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{16E3826D-E455-49AB-AABD-AA4141EEB5A4}' />
+    </worksheet>
+    <worksheet name='Attrition Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='16'>Attrition Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR-Employee-Attrition' name='federated.1ewflcu1fp6w321av0wv61ulal3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ewflcu1fp6w321av0wv61ulal3w'>
+            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column caption='Employee Number' datatype='integer' name='[EmployeeNumber]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[EmployeeNumber]' derivation='CountD' name='[ctd:EmployeeNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attrition]' derivation='None' name='[none:Attrition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]'>
+            <groupfilter function='level-members' level='[none:Department:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]</column>
+            <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' scope='cols' value='Number of Employees' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='1' />
+            <format attr='border-style' data-class='total' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='1' />
+            <format attr='border-style' data-class='total' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#c0c0c0' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+            <format attr='color' value='#ffffff' />
+            <format attr='border-color' value='#d54023' />
+            <format attr='border-style' value='solid' />
+            <format attr='font-size' value='11' />
+            <format attr='font-weight' value='bold' />
+            <format attr='title' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]' value='Department'>
+              <formatted-text>
+                <run>Department</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Attrition:nk] / [federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk])</rows>
+        <cols>[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]</cols>
+      </table>
+      <simple-id uuid='{C8C14A4D-1747-41BC-AC28-A06D0D9308E3}' />
+    </worksheet>
+    <worksheet name='Department Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='18'>Department Analysis </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR-Employee-Attrition' name='federated.1ewflcu1fp6w321av0wv61ulal3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ewflcu1fp6w321av0wv61ulal3w'>
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column caption='Employee Number' datatype='integer' name='[EmployeeNumber]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Job Role' datatype='string' name='[JobRole]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Healthcare Representative&quot;' value='Healthcare Rep' />
+                <alias key='&quot;Human Resources&quot;' value='HR' />
+                <alias key='&quot;Manager&quot;' value='Mngr' />
+                <alias key='&quot;Sales Representative&quot;' value='Sales Rep' />
+              </aliases>
+            </column>
+            <column-instance column='[EmployeeNumber]' derivation='CountD' name='[ctd:EmployeeNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[JobRole]' derivation='None' name='[none:JobRole:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]'>
+            <groupfilter function='level-members' level='[none:Department:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:JobRole:nk]'>
+            <groupfilter function='level-members' level='[none:JobRole:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]</column>
+            <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:JobRole:nk]</column>
+            <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' scope='rows' value='Number of Employees' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:JobRole:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='cols' value='0' />
+            <format attr='band-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#000000' />
+            <format attr='background-color' value='#d5402396' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#000000' />
+            <format attr='background-color' value='#d5402389' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]</rows>
+        <cols>([federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk] / [federated.1ewflcu1fp6w321av0wv61ulal3w].[none:JobRole:nk])</cols>
+      </table>
+      <simple-id uuid='{05FEF236-902B-4423-8389-7863EF7A1B32}' />
+    </worksheet>
+    <worksheet name='Dist vs Attrition'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='18'>Distance from home Vs Attrition</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR-Employee-Attrition' name='federated.1ewflcu1fp6w321av0wv61ulal3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ewflcu1fp6w321av0wv61ulal3w'>
+            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
+            <column caption='Business Travel' datatype='string' name='[BusinessTravel]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column caption='Distance From Home' datatype='integer' name='[DistanceFromHome]' role='measure' type='quantitative' />
+            <column caption='Employee Number' datatype='integer' name='[EmployeeNumber]' role='dimension' type='ordinal' />
+            <column-instance column='[EmployeeNumber]' derivation='Count' name='[cnt:EmployeeNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attrition]' derivation='None' name='[none:Attrition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DistanceFromHome]' derivation='None' name='[none:DistanceFromHome:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[Action (Business Travel,Department)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_91FF1C14521C453D9F5505463C763A01]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[BusinessTravel]' />
+              <groupfilter function='level-members' level='[Department]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[Action (Business Travel,Department)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[cnt:EmployeeNumber:qk]' scope='rows' value='Number of Employees' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#000000' />
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Attrition:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ewflcu1fp6w321av0wv61ulal3w].[cnt:EmployeeNumber:qk]</rows>
+        <cols>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:DistanceFromHome:qk]</cols>
+        <annotations>
+          <annotation class='area' id='1' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontalignment='0' fontname='Benton Sans Book' fontsize='9'>Employees residing closer to the workplace show a higher rate of attrition, with a notable peak for those living just 1-2 units of distance away. As the distance increases, attrition rates gradually stabilize, suggesting factors other than commute distance play a more significant role in employee retention for those living farther away.</run>
+              <run fontalignment='0' fontsize='9'>Æ </run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='6.0492753623188404'>
+                  <node-reference>
+                    <axis>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:DistanceFromHome:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='192.66428571428571'>
+                  <node-reference>
+                    <axis>[federated.1ewflcu1fp6w321av0wv61ulal3w].[cnt:EmployeeNumber:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='29.330434782608695'>
+                  <node-reference>
+                    <axis>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:DistanceFromHome:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='149.05714285714288'>
+                  <node-reference>
+                    <axis>[federated.1ewflcu1fp6w321av0wv61ulal3w].[cnt:EmployeeNumber:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{EE68BF3A-80BB-4929-9C92-E8588504716B}' />
+    </worksheet>
+    <worksheet name='Employee Satisfaction'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='18'>Employee Satisfaction</run>
+            <run fontalignment='1'>Æ </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR-Employee-Attrition' name='federated.1ewflcu1fp6w321av0wv61ulal3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ewflcu1fp6w321av0wv61ulal3w'>
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column caption='Employee Number' datatype='integer' name='[EmployeeNumber]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Job Role' datatype='string' name='[JobRole]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Healthcare Representative&quot;' value='Healthcare Rep' />
+                <alias key='&quot;Human Resources&quot;' value='HR' />
+                <alias key='&quot;Manager&quot;' value='Mngr' />
+                <alias key='&quot;Sales Representative&quot;' value='Sales Rep' />
+              </aliases>
+            </column>
+            <column caption='Job Satisfaction' datatype='integer' name='[JobSatisfaction]' role='measure' type='quantitative' />
+            <column-instance column='[EmployeeNumber]' derivation='CountD' name='[ctd:EmployeeNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[JobSatisfaction]' derivation='None' name='[none:JobSatisfaction:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[JobSatisfaction]' derivation='None' name='[none:JobSatisfaction:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[Action (Department,Gender,Job Role)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_C6EBB6777F6C4551A548070D086C5311]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Department]' />
+              <groupfilter function='level-members' level='[Gender]' />
+              <groupfilter function='level-members' level='[JobRole]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[Action (Department,Gender,Job Role)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' scope='cols' value='Number of Employees' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:JobSatisfaction:qk]' value='#000000' />
+            <format attr='text-orientation' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:JobSatisfaction:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>(([federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk] / [federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]) * [federated.1ewflcu1fp6w321av0wv61ulal3w].[none:JobSatisfaction:qk])</rows>
+        <cols>[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]</cols>
+      </table>
+      <simple-id uuid='{6F49B22A-D47F-4FB4-A942-EE1766BBBB87}' />
+    </worksheet>
+    <worksheet name='Job Sat vs Attr'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='18'>Job Satisfaction Vs Attrition</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR-Employee-Attrition' name='federated.1ewflcu1fp6w321av0wv61ulal3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ewflcu1fp6w321av0wv61ulal3w'>
+            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
+            <column caption='Employee Number' datatype='integer' name='[EmployeeNumber]' role='dimension' type='ordinal' />
+            <column caption='Job Satisfaction' datatype='integer' name='[JobSatisfaction]' role='measure' type='quantitative' />
+            <column-instance column='[EmployeeNumber]' derivation='Count' name='[cnt:EmployeeNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Attrition]' derivation='None' name='[none:Attrition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[JobSatisfaction]' derivation='None' name='[none:JobSatisfaction:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#d540237c' />
+            <format attr='color' value='#000000' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Attrition:nk]' />
+              <wedge-size column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[cnt:EmployeeNumber:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.2853591442108154' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:JobSatisfaction:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{717471BD-7983-48EC-A37C-C34ACF41BD9C}' />
+    </worksheet>
+    <worksheet name='Monthly Income Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='18'>Monthly Income Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR-Employee-Attrition' name='federated.1ewflcu1fp6w321av0wv61ulal3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ewflcu1fp6w321av0wv61ulal3w'>
+            <column caption='Business Travel' datatype='string' name='[BusinessTravel]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column caption='Employee Number' datatype='integer' name='[EmployeeNumber]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Monthly Income (bin)' datatype='integer' name='[Monthly Income (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='3' formula='[MonthlyIncome]' peg='0' size='1000' />
+            </column>
+            <column caption='Monthly Income' datatype='integer' name='[MonthlyIncome]' role='measure' type='quantitative' />
+            <column-instance column='[EmployeeNumber]' derivation='CountD' name='[ctd:EmployeeNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Monthly Income (bin)]' derivation='None' name='[none:Monthly Income (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[Action (Business Travel,Department)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_91FF1C14521C453D9F5505463C763A01]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[BusinessTravel]' />
+              <groupfilter function='level-members' level='[Department]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Monthly Income (bin):ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]</column>
+            <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[Action (Business Travel,Department)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' scope='rows' value='Number of Employees' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Monthly Income (bin):ok]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#000000' />
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_1' value='#00000000' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#c0c0c0' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#b4b4b4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]</rows>
+        <cols>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Monthly Income (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[Monthly Income (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{60DD94B5-7A7A-4199-B3DC-DEE20F423754}' />
+    </worksheet>
+    <worksheet name='Travel Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='18'>Travel Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR-Employee-Attrition' name='federated.1ewflcu1fp6w321av0wv61ulal3w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ewflcu1fp6w321av0wv61ulal3w'>
+            <column caption='Business Travel' datatype='string' name='[BusinessTravel]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column caption='Employee Number' datatype='integer' name='[EmployeeNumber]' role='dimension' type='ordinal' />
+            <column-instance column='[EmployeeNumber]' derivation='CountD' name='[ctd:EmployeeNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BusinessTravel]' derivation='None' name='[none:BusinessTravel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:BusinessTravel:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Non-Travel&quot;</bucket>
+              <bucket>&quot;Travel_Rarely&quot;</bucket>
+              <bucket>&quot;Travel_Frequently&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]'>
+            <groupfilter function='member' level='[none:Department:nk]' member='&quot;Research &amp; Development&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' scope='rows' value='Numbe of Employees' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:BusinessTravel:nk]' value='83' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:BusinessTravel:nk]' value='false' />
+            <format attr='text-orientation' field='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:BusinessTravel:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#000000' />
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#b4b4b4' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:BusinessTravel:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]</rows>
+        <cols>([federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk] / [federated.1ewflcu1fp6w321av0wv61ulal3w].[none:BusinessTravel:nk])</cols>
+      </table>
+      <simple-id uuid='{97D7B17A-23D6-4386-A7C0-E5D2F54EEF75}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1300' minheight='800' minwidth='1300' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='HR-Employee-Attrition' name='federated.1ewflcu1fp6w321av0wv61ulal3w' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ewflcu1fp6w321av0wv61ulal3w'>
+        <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+        <column caption='Job Role' datatype='string' name='[JobRole]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;Healthcare Representative&quot;' value='Healthcare Rep' />
+            <alias key='&quot;Human Resources&quot;' value='HR' />
+            <alias key='&quot;Manager&quot;' value='Mngr' />
+            <alias key='&quot;Sales Representative&quot;' value='Sales Rep' />
+          </aliases>
+        </column>
+        <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+        <column-instance column='[JobRole]' derivation='None' name='[none:JobRole:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98770' x='615' y='1000'>
+            <zone fixed-size='574' h='98000' id='5' is-fixed='true' type-v2='layout-basic' w='44154' x='615' y='1000'>
+              <zone h='49000' id='3' name='Age Distribution' w='44154' x='615' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='Department Analysis' w='44154' x='615' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='98000' id='12' name='Employee Satisfaction' w='23078' x='44769' y='1000'>
+              <layout-cache minwidth='267' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='98000' id='15' name='Job Sat vs Attr' w='19230' x='67847' y='1000'>
+              <layout-cache fixed-size-w='242' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='12308' x='87077' y='1000'>
+              <zone h='8125' id='8' name='Age Distribution' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' type-v2='color' w='12154' x='87154' y='1125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8250' id='11' name='Department Analysis' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type-v2='color' w='12154' x='87154' y='9250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8500' id='16' name='Job Sat vs Attr' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Attrition:nk]' type-v2='color' w='12154' x='87154' y='17500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='10' mode='dropdown' name='Department Analysis' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type-v2='filter' w='12154' x='87154' y='26000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='13' mode='dropdown' name='Department Analysis' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]' type-v2='filter' values='database' w='12154' x='87154' y='32500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='14' mode='dropdown' name='Department Analysis' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:JobRole:nk]' type-v2='filter' values='database' w='12154' x='87154' y='39000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='21' param='vert' type-v2='layout-flow' w='98770' x='615' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Age Distribution' w='44154' x='615' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='8' name='Age Distribution' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' type-v2='color' w='12154' x='87154' y='1125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='12' is-fixed='true' name='Employee Satisfaction' w='23078' x='44769' y='1000'>
+                  <layout-cache minwidth='267' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='15' is-fixed='true' name='Job Sat vs Attr' w='19230' x='67847' y='1000'>
+                  <layout-cache fixed-size-w='242' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8500' id='16' name='Job Sat vs Attr' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Attrition:nk]' type-v2='color' w='12154' x='87154' y='17500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='10' mode='dropdown' name='Department Analysis' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type-v2='filter' w='12154' x='87154' y='26000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='13' mode='dropdown' name='Department Analysis' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]' type-v2='filter' values='database' w='12154' x='87154' y='32500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='14' mode='dropdown' name='Department Analysis' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:JobRole:nk]' type-v2='filter' values='database' w='12154' x='87154' y='39000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='Department Analysis' w='44154' x='615' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8250' id='11' name='Department Analysis' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type-v2='color' w='12154' x='87154' y='9250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3B766CDA-8C24-4DD4-8823-5B36CE716951}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1400' minheight='800' minwidth='1400' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='HR-Employee-Attrition' name='federated.1ewflcu1fp6w321av0wv61ulal3w' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ewflcu1fp6w321av0wv61ulal3w'>
+        <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+        <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98858' x='571' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='84429' x='571' y='1000'>
+              <zone h='49000' id='3' name='Dist vs Attrition' w='42211' x='571' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='Travel Analysis' w='42218' x='42782' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='11' name='Attrition Analysis' w='42211' x='571' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='14' name='Monthly Income Analysis' w='42218' x='42782' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='202' h='98000' id='19' is-fixed='true' type-v2='layout-basic' w='14429' x='85000' y='1000'>
+              <zone h='59000' id='6' param='vert' type-v2='layout-flow' w='14429' x='85000' y='1000'>
+                <zone fixed-size='80' h='11000' id='8' is-fixed='true' name='Dist vs Attrition' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Attrition:nk]' type-v2='color' w='14429' x='85000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='96' h='13000' id='10' is-fixed='true' name='Travel Analysis' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:BusinessTravel:nk]' type-v2='color' w='14429' x='85000' y='12000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='87' h='11875' id='16' is-fixed='true' name='Monthly Income Analysis' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type-v2='color' w='14429' x='85000' y='25000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='141' h='18625' id='13' is-fixed='true' name='Attrition Analysis' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]' type-v2='color' w='14429' x='85000' y='36875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='4500' id='21' mode='dropdown' name='Attrition Analysis' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]' type-v2='filter' values='database' w='14429' x='85000' y='55500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='39000' id='20' param='vert' type-v2='layout-flow' w='14429' x='85000' y='60000'>
+                <zone fixed-size='73' h='10125' id='12' is-fixed='true' mode='dropdown' name='Attrition Analysis' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type-v2='filter' w='14429' x='85000' y='60000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='24' param='vert' type-v2='layout-flow' w='98858' x='571' y='1000'>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Dist vs Attrition' w='42211' x='571' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='80' h='11000' id='8' name='Dist vs Attrition' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Attrition:nk]' type-v2='color' w='14429' x='85000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='Travel Analysis' w='42218' x='42782' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='96' h='13000' id='10' name='Travel Analysis' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:BusinessTravel:nk]' type-v2='color' w='14429' x='85000' y='12000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4500' id='21' mode='dropdown' name='Attrition Analysis' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]' type-v2='filter' values='database' w='14429' x='85000' y='55500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='73' h='10125' id='12' mode='dropdown' name='Attrition Analysis' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type-v2='filter' w='14429' x='85000' y='60000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='11' is-fixed='true' name='Attrition Analysis' w='42211' x='571' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='141' h='18625' id='13' name='Attrition Analysis' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]' type-v2='color' w='14429' x='85000' y='36875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='14' is-fixed='true' name='Monthly Income Analysis' w='42218' x='42782' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='87' h='11875' id='16' name='Monthly Income Analysis' pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type-v2='color' w='14429' x='85000' y='25000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{384BE349-DD52-4F3A-A701-BB1AA3BF381F}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1299' minheight='964' minwidth='1299' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98768' x='616' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98768' x='616' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98768' x='616' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98768' x='616' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Dash 1' captured-sheet='Dashboard 1' id='1' />
+                  <story-point caption='Dash 2' captured-sheet='Dashboard 2' id='2' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{099D97F3-2492-4A1F-8C40-B9A8B613CC27}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Age Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[ctd:EmployeeNumber:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3789E730-324A-4BD5-9B46-04A02518C555}' />
+    </window>
+    <window class='worksheet' name='Department Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D5CBF3F7-0CFB-4837-B19C-D2F032FBBAFF}' />
+    </window>
+    <window class='worksheet' name='Employee Satisfaction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:JobSatisfaction:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{89189FEF-E26D-4D94-BCD6-A59F2AEDDFE1}' />
+    </window>
+    <window class='worksheet' name='Job Sat vs Attr'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Attrition:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AA6B337C-90CE-4752-BCC1-AC130E9A9B0C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1' tab-color='#4f779a'>
+      <viewpoints>
+        <viewpoint name='Age Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Department Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Employee Satisfaction' />
+        <viewpoint name='Job Sat vs Attr'>
+          <zoom type='fit-height' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4CF823DF-BBE5-4650-9919-BB6631D8CFD6}' />
+    </window>
+    <window class='worksheet' name='Attrition Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Department:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3121D4E0-BD78-4F6B-8544-FCC526969E42}' />
+    </window>
+    <window class='worksheet' name='Travel Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='161'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:BusinessTravel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6CC48331-AE76-450A-B62C-2EF37527B86C}' />
+    </window>
+    <window class='worksheet' name='Dist vs Attrition'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Attrition:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2784B0CA-C68B-4380-B1C8-38D1EAFB518E}' />
+    </window>
+    <window class='worksheet' name='Monthly Income Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1ewflcu1fp6w321av0wv61ulal3w].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FF9A3638-E59C-4213-AEE6-8BA60D1A14B9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Attrition Analysis'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Dist vs Attrition'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly Income Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Travel Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{06E2BFE1-AFDE-4384-A96C-6FC75792B7C0}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{E612B34C-1EAB-4365-80B9-0E33F95CA7B9}' />
+    </window>
+  </windows>
+</workbook>
