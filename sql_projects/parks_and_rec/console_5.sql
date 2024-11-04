@@ -40,3 +40,8 @@ order by age desc
 limit 3;
 
 
+select ed.employee_id, ed.first_name, ed.last_name, es.salary, pd.department_name
+from employee_demographics ed
+    join employee_salary es on ed.employee_id = es.employee_id
+    join parks_departments pd on es.dept_id = pd.department_id;
+
