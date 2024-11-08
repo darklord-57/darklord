@@ -89,7 +89,12 @@ WHERE rank_ <= 5  -- cte had to be used to filter the rank
 ORDER BY year, rank_;
 
 
-
-
+# check correlation between funds raised and layoffs
+SELECT
+    industry,
+    AVG(funds_raised_millions) AS avg_funds_raised,
+    AVG(total_laid_off) AS avg_laid_off
+FROM layoffs_staging2
+GROUP BY industry;
 
 
